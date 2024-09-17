@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Completo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Estilo para o Menu de Navegação */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para o Slider */
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
+        }
+        /* Estilo para os Cards */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        /* Estilo para o Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            margin: 10px;
+        }
+        .footer-section h2 {
+            margin-top: 0;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="cadastro.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider de Banner -->
+    <div class="slider" id="home">
+        <div class="slides">
+            <div class="slide">
+                <img src="ruru.png" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="mav.png" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="fabfabafbafbafbafbabfab.png" alt="Banner 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards com Flexbox -->
+    <div class="container" id="servicos">
+        <div class="card">
+            <h2>Apolo Nästy</h2>
+            <img src="ruru225.png" alt="">
+            <p>Álbum do Rudies Flacko</p>
+        </div>
+        <div class="card">
+            <h2>ATÉ QUE NÃO HAJA LUZ (+ONYX)</h2>
+            <img src="images.jpg" alt="">
+            <p>Álbum do mavyrmldy</p>
+        </div>
+        <div class="card">
+            <h2>the life of melody!</h2>
+            <img src="maaaaaaa.jpg" alt="">
+            <p>Álbum do mavyrmldy</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Somos uma empresa dedicada a oferecer soluções inovadoras para nossos clientes.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h2>Links Rápidos</h2>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Contato</h2>
+                <p>Email: jerkkboybx@gmail.com</p>
+                <p>Telefone: (11) 4002-8922</p>
+            </div>
+            <div class="footer-section">
+                <h2>Siga-nos</h2>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Exemplo de Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
